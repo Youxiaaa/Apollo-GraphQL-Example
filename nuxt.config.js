@@ -19,6 +19,11 @@ export default {
     '@/assets/css/main.css'
   ],
 
+  transition: {
+    name: 'fade',
+    mode: 'out-in'
+  },
+
   plugins: [
   ],
 

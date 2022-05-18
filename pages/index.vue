@@ -1,7 +1,7 @@
 <template>
   <section class="min-h-screen w-full flex items-center justify-center bg-gradient-to-tr from-pink-300 to-purple-300">
     <div v-if="$apollo.queries.characters.loading">
-      <h2>Loading...</h2>
+      <h2 class="text-white text-4xl font-bold">Loading...</h2>
     </div>
     <ul v-else class="bg-white rounded-lg shadow-md p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
       <li @click="$router.push(`/member/${item.id}`)" v-for="item in characters.results" :key="item.id" class="flex gap-6 bg-[#f1f1f1] p-4 rounded-lg shadow-md cursor-pointer hover:shadow-inner">
